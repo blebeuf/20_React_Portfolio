@@ -1,3 +1,5 @@
+import aboutMe from "../assets/BryanLeBeuf1.png";
+
 export default function About() {
   return (
     <section className="about">
@@ -20,7 +22,7 @@ export default function About() {
           </p>
         </div>
         <div className="about-image">
-          <img src="/pathBryanLeBeuf1.png" alt="Bryan LeBeuf" />
+          <img src={aboutMe} alt="Bryan LeBeuf" />
         </div>
       </div>
     </section>
