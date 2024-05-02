@@ -1,13 +1,52 @@
-export default function Nav() {
-    return (
-    <nav className="nav">
-      <div className="container nav__container">
-        <Link to="/about" className="nav__link">About</Link>
-        <Link to="/contact" className="nav__link">Contact</Link>
-        <Link to="/resume" className="nav__link">Resume</Link>
-        <Link to="/projects" className="nav__link">Projects</Link>
-      </div>
-    </nav>
+import { Link, useLocation } from 'react-router-dom';
+
+function Nav() {
+  const currentPage = useLocation().pathname;
+
+  return (
+    <ul className="nav nav-tabs">
+      <li className="nav-item">
+        <Link
+          to="/"
+          className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+        >
+          Home
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/about"
+          className={currentPage === '/about' ? 'nav-link active' : 'nav-link'}
+        >
+          About
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/projects"
+          className={currentPage === '/projects' ? 'nav-link active' : 'nav-link'}
+        >
+          Projects
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/resume"
+          className={currentPage === '/resume' ? 'nav-link active' : 'nav-link'}
+        >
+          Resume
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/contact"
+          className={currentPage === '/contact' ? 'nav-link active' : 'nav-link'}
+        >
+          Contact
+        </Link>
+      </li>
+    </ul>
   );
 }
 
+export default Nav;
