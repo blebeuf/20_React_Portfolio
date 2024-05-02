@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-// this portion was based on the lesson react section regarding conditonal rendering
+
 function Nav() {
   const currentPage = useLocation().pathname;
 
@@ -7,8 +7,8 @@ function Nav() {
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <Link
-          to="/about"
-          className={currentPage === '/about' ? 'nav-link active' : 'nav-link'}
+          to="/"  // Updated to point to root
+          className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
         >
           About
         </Link>

@@ -1,3 +1,5 @@
+import "./projects.css";
+
 export default function Projects() {
     // Example data array for projects, you can replace or enhance this with actual project data
     const projects = [

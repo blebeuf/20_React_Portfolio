@@ -1,4 +1,5 @@
 import aboutMe from "../assets/BryanLeBeuf1.png";
+import "./about.css";
 
 export default function About() {
   return (
@@ -7,6 +8,9 @@ export default function About() {
         <h1>Bryan LeBeuf</h1>
         <p>Visual Artist and Creative Director</p>
       </div>
+        <div className="about-image">
+          <img src={aboutMe} alt="Bryan LeBeuf" />
+        </div>
       <div className="about-content">
         <div className="about-text">
           <p>
@@ -20,9 +24,6 @@ export default function About() {
             around the world. Bryan is committed to using his art as a tool for social change,
             challenging viewers to reconsider familiar perspectives and engage in new dialogues.
           </p>
-        </div>
-        <div className="about-image">
-          <img src={aboutMe} alt="Bryan LeBeuf" />
         </div>
       </div>
     </section>

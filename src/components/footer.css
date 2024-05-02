@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;  /* Ensure the html and body are full height */
+    margin: 0;     /* Remove default margin */
+  }
+  
+  .footer {
+    position: fixed;   /* Fix position to the viewport */
+    bottom: 0;         /* Align to the bottom */
+    left: 0;           /* Stretch across to the left edge */
+    right: 0;          /* Stretch across to the right edge */
+    background-color: #333; /* Dark background for the footer */
+    color: #fff;           /* Light text color for visibility */
+    text-align: center;    /* Center the text links */
+    padding: 10px 0;       /* Padding to give some breathing room */
+  }
+  
+  .footer__link {
+    color: #fff;       /* White text for the links */
+    margin: 0 15px;    /* Spacing between links */
+    text-decoration: none;  /* Remove underline from links */
+  }
+  
+  .footer__link.active {
+    color: #4CAF50;   /* Highlight color for the active page */
+  }
+  
