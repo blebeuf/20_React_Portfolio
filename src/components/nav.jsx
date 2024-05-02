@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-
+// this portion was based on the lesson react section regarding conditonal rendering
 function Nav() {
   const currentPage = useLocation().pathname;
 
