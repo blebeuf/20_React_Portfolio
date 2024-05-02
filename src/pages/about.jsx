@@ -20,10 +20,9 @@ export default function About() {
           </p>
         </div>
         <div className="about-image">
-          <img src="/path/to/bryan-lebeuf-image.jpg" alt="Bryan LeBeuf" />
+          <img src="/pathBryanLeBeuf1.png" alt="Bryan LeBeuf" />
         </div>
       </div>
     </section>
   );
 }
-
