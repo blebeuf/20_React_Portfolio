@@ -11,12 +11,12 @@ html, body {
     background-color: #333; /* Dark background for the footer */
     color: #fff;           /* Light text color for visibility */
     text-align: center;    /* Center the text links */
-    padding: 10px 0;       /* Padding to give some breathing room */
+    padding: 1%;       /* Padding to give some breathing room */
   }
   
   .footer__link {
     color: #fff;       /* White text for the links */
-    margin: 0 15px;    /* Spacing between links */
+    margin: 0 10px;    /* Spacing between links */
     text-decoration: none;  /* Remove underline from links */
   }
   
